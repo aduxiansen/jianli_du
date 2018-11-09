@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<title>Home</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas 
+================================================== -->
+<!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!--fonts
+====================================================-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
+<!--stylesheets
+====================================================-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">  
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/simpletextrotator.css"> 
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<script src="js/jquery.min.js"></script> <!-- JQUERY -->
+</head>
+<body>
+
+<!--FRONT PAGE/ SPLASH SCREEN SECTION-->
+
+<div class="loading-screen"></div>
+
+<div id="frontpage"> 
+	<div class="shadow-img"></div> 
+	<img src="images/front-image.jpg" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
+	<h1 style="margin-bottom: 15px;">杜<span class="invert">鑫浩</span></h1><!--PROFILE NAME-->
+	<h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">前端<span class="rotate">工程师, 设计师</span></h3> <!--SUBTITLE IN PROFILE-->
+	<div class="frontclick"><img src="images/click.png" alt="" class="img-responsive"><span class="pulse"></span></div>
+</div>
+<!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
+<!--container-->
+<div class="container">
+	<div id="content" class="row hidden">
+		<div class="col-sm-4">
+			<!--namecard-->
+			<div id="namecard" class="namecard">
+				<div class="shadow-img"></div>
+				<h1 class="maintitle">杜 <span class="invert">鑫浩</span></h1><!--PROFILE NAME-->
+				<h3 class="invert sub-maintitle">前端 
+					<span class="rotate">工程师, 设计师</span><!--SUBTITLE AFTET NAME-->
+				</h3>
+				<img id="profile-img" class="profile-img transparent" src="images/profile-thum.png" alt="profile-image"><!--PROFILE IMAGE-->
+			</div><!--/#namecard-->
+			<!--menu-->
+			<div id="menu-container">
+				<!--PAGE MENU-->
+				<ul class="nav-menu no-padding">
+					<li class="nav-btn selected" title="Home" data-page="home">
+						<div class="hover-background"></div>
+						<span>主页</span><i class="fa fa-user fa-fw"></i>
+					</li>
+					<li class="nav-btn" id="resume-btn" title="Resume"  data-page="resume">
+						<div class="hover-background"></div>
+						<span>资料</span><i class="fa fa-file-text fa-fw"></i>
+					</li>
+				   <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+						<div class="hover-background"></div>
+						<span>项目</span><i class="fa fa-suitcase fa-fw"></i>
+					</li>
+					<li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
+						<div class="hover-background"></div>
+						<span>联系</span><i class="fa fa-paper-plane fa-fw"></i>
+					</li>
+				</ul><!--/.nav-menu __PAGE MENU ENDS-->
+
+				<!--SOCIAL NAV MENU-->
+				<div class="social-menu-container">
+					<ul class="social-menu no-padding">                     
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+						<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						<li><a href=""><i class="fa fa-pinterest-p"></i></a></li>
+						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div><!--/.social-menu-container-->
+			</div><!--#menu-container-->
+		</div>
+		<div class="col-sm-8 page-segment">
+			<ul class="page-container no-padding">
+				<!--HOME/PROFILE PAGE-->
+				<li id="home" class="selected">
+					<div class="title-container hidden">
+						<div class="shadow-img"></div> 
+						<h2 class="rotate-out">Welcome To <span class="invert">My Profile</span></h2><!--HOME TITLE-->                          
+					</div>
+					<div class="description hidden">
+						<div class="watermark-home"></div> 
+
+						<div class="fade-text transparent">
+							<!--DESCRIPTION ON HOME-->
+							<div class="strong-text">你好, 我是<span>杜鑫浩</span></div>
+							<div class="focus-text"><span>前端 工程师 & </span><span>前端 设计师</span></div>
+							<p class="large-paragraph">
+								1、热爱互联网开发，对IT新技术有着浓厚的兴趣</br>
+								2、喜欢钻研，学习能力较强，对新事物的认知速度较快、独立思考能力较强。</br>
+								3、为人诚恳，乐于助人，有着高度的责任心、事业心，注重团队协作。</br>
+							</p>         
+							<!--DESCRIPTION ON HOME ENDS-->
+						</div>
+
+						<!--ALL PERSONAL DETAILS-->
+						<h3 class="personal-info-title title">个人 信息</h3>
+						<ul class="personal-info">
+							<li class="rotate-out rotated"><label>姓名</label><span>杜鑫浩</span></li>                     
+							<li class="rotate-out rotated"><label>地址</label><span>北京市、海淀区</span></li>
+							<li class="rotate-out rotated"><label>邮箱</label><span>17610059758@163.com</span></li>  
+							<li class="rotate-out rotated"><label>电话</label><span>17610059758</span></li>
+						</ul><!--/ul.personal-info-->
+					</div>
+				</li><!--/#home-->
+
+				<!--RESUME PAGE-->
+				<li id="resume" class="hidden">
+					<div class="title-container">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out rotated"><span class="invert">工作</span>经历</h2> <!--RESUME TITLE-->
+					</div>
+					<div class="description">
+
+						<div class='tabs tabs_animate'>
+							<!--RESUME TAB LISTS-->
+							<ul class='horizontal no-padding'>
+								<li><a href="#tab-1" class="icon-bg icon-skills"><div>技能</div></a></li>
+								<li><a href="#tab-2" class="icon-bg icon-education"><div>教育</div></a></li>
+								<li><a href="#tab-3" class="icon-bg icon-employment"><div>工作</div></a></li>
+							</ul><!--RESUME TAB LISTS ENDS-->
+
+							<!--RESUME FIRST TAB/SKILL TAB DETAILS-->
+							<div id='tab-1' class="folio-container">
+								<h3 class="title">专业技能</h3><!--SKILLS WITH BAR DISPLAY-->
+								<ul class="skills-list no-padding">
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">HTML</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar1" style="width: 58%;"></div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">CSS</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar2" style="width: 75%;"></div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">Javascript</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar3" style="width: 85%;"></div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">jQuery</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar4" style="width: 85%;"></div>
+											</div>
+										</div>
+									</li>
+									<!-- 后端技术 -->
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">Node</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar7" style="width: 85%;"></div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">PHP</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar5" style="width: 70%;"></div>
+											</div>
+										</div>
+									</li>						
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">Mysql</div></div>
+										<div class="col-xs-9">
+											<div class="bar" style="margin-left: 15px;">
+												<div class="percentage" id="bar6" style="width: 80%;"></div>
+											</div>
+										</div>
+									</li>
+								</ul><!--SKILLS WITH BAR DISPLAY ENDS-->
+
+								<!--SKILLS WITH CIRCLE DISPLAY-->
+								<div class="circle-skill-container">
+									<h3 class="title">框架技术</h3>
+									<div class="row">
+										<div class="col-xs-4 center-align">
+											<div class="circle-bar" id="line-container1">
+												<div class="progressbar-text" id="progress-text1">0</div>
+											</div>
+											<h5>vue</h5>
+										</div>
+										<div class="col-xs-4 center-align">
+											<div class="circle-bar" id="line-container2">
+												<div class="progressbar-text" id="progress-text2">0</div>
+											</div>
+											<h5>react</h5>
+										</div>
+										<div class="col-xs-4 center-align">
+											<div class="circle-bar" id="line-container3">
+												<div class="progressbar-text" id="progress-text3">0</div>
+											</div>
+											<h5>Laravel</h5>
+										</div>
+									</div>
+								</div><!--SKILLS WITH CIRCLE DISPLAY ENDS-->
+							</div><!--RESUME FIRST TAB/SKILL TAB DETAILS ENDS-->
+							
+							<!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
+							<div id='tab-2'>
+								<h3 class="title">教育经历</h3>
+								<ul class="education-class">
+									<li class="current">
+										<!--EDUCATION LIST ITEM-->
+										<h4 class="title">计算机科学与技术<i class="fa fa-sort-desc pull-right"></i></h4>
+										<div class="list-content">
+											<h5 class="title">教育时间<span class="list-year">(2011 - 2015)</span></h5>
+											<p>北京交通大学计算机学院</p><!--EDUCATION LIST DETAILS-->
+										</div>
+									</li>
+								</ul>
+							</div><!--RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS-->
+							<!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+							<div id='tab-3'>
+								<h3 class="title">就业经历</h3>
+								<ul class="employment-class tab-cont">
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>全栈工程师<span class="year">2016 - 2018</span></h4>
+										<h5>烈日影视传播(北京)有限公司</h5>
+										<p>
+											1、制作或协助制作各种页面组件或页面模板。<br/>
+											2、运用 Javascript 及 JQuery 实现各种动态交互效果。<br/>
+											3、根据 UI 给出的设计文档对页面进行排版，使用 HTML5 和 CSS3 进行布局和样式设置。<br/>
+											4、项目需求分析，概要设计，数据库设计。<br/>
+											5、主要负责app接口开发。服务器搭建维护。<br/>
+											6、后台管理系统开发维护。<br/>
+										</p><!--EMPLOYMENT LIST DETAILS-->
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>前端工程师<span class="year">2015-2016</span></h4>
+										<h5>北京齐力众信科技有限公司</h5>
+										<p>
+										1、根据产品设计需求，配合后台开发人员实现产品界面和功能，维护及优化前端页面性能。</br>
+										2、制作或协助制作各种页面组件或页面模板。</br>
+										3、运用 Javascript 及 JQuery 实现各种动态交互效果。</br>
+										4、根据 UI 给出的设计文档对页面进行排版，使用 HTML5 和 CSS3 进行布局和样式设置。</br>
+										</p><!--EMPLOYMENT LIST DETAILS-->
+									</li>
+								</ul>
+							</div><!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+						</div>
+					</div>
+				</li>
+				<!--/#resume-->
+				<!--PORTFOLIO PAGE-->
+				<li id="portfolio" class="hidden">
+					<div class="title-container">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out rotated">开发项目<span style="color: #fff;font-size: 8px;">点击查看</span></h2> <!--PORTFOLIO TITLE-->
+
+					</div>
+
+					<!--PORTFOLIO CATEGORY LIST--> 
+					<!--/.button-group filters-button-group-->   
+<!-- 					<div class="abs-child">
+						<ul class="button-group filters-button-group">
+							<li class="button is-checked" data-filter="*">Show All</li>
+							<li class="button" data-filter=".photography">Photography</li>
+							<li class="button" data-filter=".commercial">Commercial</li>
+							<li class="button" data-filter=".potrait">Potrait</li>
+						</ul>
+					</div> -->
+					
+					<div class ="sec-porfolio description" style="padding-top: 20px;"> 
+						<div class="row">
+							<!--PORTFOLIO ITEM CONTAINER-->
+							<div class="folio-container">
+								<ul class="folio-item"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									<li class="view view-first photography" >  
+										<img src="images/xm/yg.png" alt="" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask">  
+											 <h2>阳光保险集团</h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                               
+											<!-- Button trigger modal -->
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal">阅读 更多</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>  
+									</li>  
+									<li class="view view-first commercial"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/xm/ygcw.png" alt="" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>财务保险</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                  
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal2">阅读 更多</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li>
+									<li class="view view-first photography"> <!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										 <img src="images/xm/project-pcplaypage.png" alt="" /> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->  
+										 <div class="mask">  
+											 <h2>掌门PC播放页</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                    
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal3">阅读 更多</a>  <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>  
+									</li>                         
+									<li class="view view-first commercial"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/xm/project-mdl.jpg" alt="" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>掌门</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal4">阅读 更多</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li> 
+														
+									<li class="view view-first potrait"><!--PORTFOLIO INDIVIDAUAL ITEM-->  
+										 <img src="images/xm/lrys.jpg" alt="" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->   
+										 <div class="mask">  
+											 <h2>烈日影视官网</h2>                                   
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">阅读 更多</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
+										 </div>  
+									</li>                         
+									<li class="view view-first photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="images/xm/xqck.png" alt="" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
+										<div class="mask"></div>
+										<div class="content">
+											<h2>星球此刻</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                 
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal6">阅读 更多</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li> 
+									<li class="view view-first potrait"> <!--PORTFOLIO INDIVIDAUAL ITEM--> 
+										<img src="images/xm/yzp.png" alt="" /> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->  
+										<div class="mask">  
+											 <h2>云智片</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                            
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal7">阅读 更多</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
+										 </div>  
+									</li>   
+									
+									<li class="view view-first commercial"><!--PORTFOLIO INDIVIDAUAL ITEM-->  
+										 <img src="images/xm/lrys_1.jpg" alt="" /> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->  
+										 <div class="mask">  
+											 <h2>云智片后台管理系统</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                                    
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal8">阅读 更多</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
+										 </div>  
+									</li>             
+																							
+											  
+								</ul>
+							</div>
+							<!--PORTFOLIO ITEM CONTAINER ENDS-->
+						</div>                          
+					</div>
+				</li><!--/#portfolio-->
+
+				<!--CONTACT PAGE-->
+				<li id="contact" class="hidden">
+					<div class="title-container" >
+						<div class="shadow-img"></div>               
+					   <h2 class="rotate-out rotated">联系信息</h2><!--CONTACT PAGE TITLE-->
+					</div>
+					<div class="description">                           
+						<div class="row">
+						<!--GOOGLE MAP-->
+							<div class="col-sm-12">
+								<div class="map-container">
+									<div id="map" style="width:100%;height:325px;display: none;"></div>
+									<div style="width:100%;height:325px;"><img src="images/ditu.png"width="526px" height="305px" alt=""></div>
+								</div>
+							</div>
+
+							<div class="col-sm-5">
+								<!--CONTACT DESCRIPTION-->
+								<h3 class="title">联系信息</h3>
+								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-map-marker"></i></span>北京市, 海淀区</h6>
+								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-phone"></i></span>17610059758</h6>
+								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-envelope"></i></span>17610059758@163.com</h6>
+								<!--/CONTACT DESCRIPTION ENDS-->
+							</div>
+							<div class="col-sm-7">
+
+								<div class="mail-container">
+									<div class="cnmail result">
+										<div class="msg success-msg"><i class="icon svg-check"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M16 2.688c-7.375 0-13.313 5.938-13.313 13.313s5.938 13.313 13.313 13.313c7.375 0 13.313-5.938 13.313-13.313s-5.938-13.313-13.313-13.313zM16 28.25c-6.75 0-12.25-5.5-12.25-12.25s5.5-12.25 12.25-12.25c6.75 0 12.25 5.5 12.25 12.25s-5.5 12.25-12.25 12.25zM22.688 11.25l-8.563 8.313-3-3c-0.313-0.313-0.813-0.313-1.125 0s-0.313 0.813 0 1.125l3.563 3.563c0.125 0.125 0.313 0.188 0.563 0.188 0.188 0 0.375-0.063 0.5-0.188l9.125-8.875c0.375-0.313 0.375-0.813 0.063-1.125s-0.813-0.313-1.125 0z"></path> </svg> </i><span> You email has been stored!</span></div>
+										<div class="msg error-msg"><i class="icon svg-close-circle"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M6.563 6.563c-5.188 5.188-5.188 13.688 0 18.875s13.688 5.188 18.875 0c5.188-5.188 5.188-13.625 0-18.875-5.188-5.188-13.625-5.188-18.875 0zM24.688 24.688c-4.813 4.75-12.563 4.75-17.375 0-4.75-4.813-4.75-12.563 0-17.375 4.813-4.75 12.563-4.75 17.375 0 4.75 4.813 4.75 12.563 0 17.375zM10.75 10l-0.813 0.75 5.313 5.25-5.25 5.25 0.75 0.75 5.25-5.25 5.25 5.25 0.75-0.75-5.25-5.25 5.313-5.25-0.813-0.75-5.25 5.25z"></path> </svg> </i><span> Sorry! Something went wrong!</span></div>
+									</div>
+									<h3 class="title invert">Don't Forget To Mail Me</h3>
+									<!--CONTACT FORM-->
+									<form action="sendmail.php" class="form-horizontal" id="contact-form">
+										<div class="form-group">
+											<input name="name" class="form-control required" placeholder="Name" data-placement="top" type="text">
+										</div>                                    
+										<div class="form-group">
+											<input name="email" class="form-control email" placeholder="Email" type="text">
+										</div>                   
+										<div class="form-group">
+											<textarea name="message" class="form-control" placeholder="Message" rows="3"></textarea>
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn btn-success">SEND</button>
+										</div>
+
+									</form><!--/#contact-form-->
+								</div>                      
+								
+							</div>                          
+							
+						</div>
+					</div>
+				</li><!--/#contact-->
+			</ul> 
+
+			<div class="row mobile-nav-container">
+				<!--SOCIAL NAV FOR MOBILE-->
+				<ul class="mobile-social no-padding">
+					<li>Connect With Me</li>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest-p"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul><!--/.mobile-social-->
+			</div>               
+		</div><!--/.page-segment -->
+		<!--  <h6 class="copyright-text">Copyright © 2015 John Doe</h6> --> <!--if anyone wants copyright Texts--> 
+	</div>
+</div><!--/.container -->
+<!-- <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div> -->
+<!--PORTFOLIO IMAGE MODAL LIST-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">阳光保险集团</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/yg.png" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、Javascript;<br/>
+						展示各类保险信息，查询理赔进度，查询保单的手机无线端、pc端，支持多浏览器。<br/>
+						<a href="http://www.sinosig.com/" target="view_window">在线地址</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel2">阳光保险集团-财务保险</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/yg.png" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、Javascript;<br/>
+						展示各类保险信息的手机无线端、pc端，支持多浏览器。支持在线抽奖，在线购买等业务<br/>
+						<a href="http://www.4000-000-000.com/index" target="view_window">在线地址</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel3">掌门PC视频播放页</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/project-pcplaypage.png" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、CSS3、videojs、Vue.js;<br/>
+						用户观看视频的主页面。因为页面有CDN缓存，所以大部分动态内容要通过JS加载。为了提高性能，采用了延迟加载、延迟渲染、事件代理等优化方式。此外，还通过监听页面的window.onerror事件对异常信息进行采集，以便及时发现和排查故障。<br/>
+						<a href="http://zm.gaiay.net.cn/common/noresult.html?circleId=7a609c1555845ea76-7ffe" target="view_window">在线地址</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel4">掌门</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/project-mdl.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、CSS3、Javascript、Vue.js;<br/>
+						兼容主流移动浏览器及Webkit内核的PC浏览器。在微信中打开时会调用微信JSSDK的接口，在掌门APP中打开时会调用APP提供的接口。核心页面包括：主要业务：直播、回放、预告的观看，二次分享，加群业务，打赏业务，聊天业务，观看权限业务，推客业务，分销业务<br/>
+						<a href="http://m.zm518.cn/html/live/livesList.html?id=a06e15153a1a395f9-7fe8" target="view_window">在线地址</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel5">烈日影视公司官网</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/lrys_2.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、CSS3、Javascript、PHP;<br/>
+						烈日影视公司官网重做，.负责公司官网的前端页面搭建及后期的维护；运用语义化标签+css3实现其动态效果，使用 ajax实现与后台的交互，运用jquery库实现动画效果<br/>
+						<a href="http://sunpic.cn/" target="view_window">在线地址</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel6">星球此刻</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/xqck.png" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、CSS3、Javascript、Laravel;<br/>
+						混合开发技术webview、rem布局、参与使用Laravel框架编写接口、运用 Javascript 及 JQuery 实现各种动态交互效果.该产品主要用户公司拍摄视频、新预告、推广、高分电影片段展示<br/>
+						<a href="#" >应用商店</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel7">云智片后台管理系统</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/lrys_1.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:HTML5、CSS3、Javascript、PHP、MYSQL、Redis、Laravel;<br/>
+						使用laravel框架进行管理系统前后端开发：主要功能有人员、设备等管理、订单支付信息管理、用户信息管理、权限分配等<br/>
+						<a href="#" >应用商店</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel8">云智片</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="images/xm/lrys_1.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>
+						使用技术:PHP、MYSQL、Redis、Laravel;<br/>
+						产于产品设计、数据库设计、项目任务分配、任务完成度统计api接口、文档编写，微信支付、支付宝支付申请并调用<br/>
+						<a href="http://admin.aipics.cn" target="view_window">在线地址</a>
+					</p>
+				</div>                      
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--javascript files
+=============================================================-->
+<script type="text/javascript" src="js/jQueryTween-aio-min.js"></script> <!-- JQUERY Tween Plugin -->
+<script type="text/javascript" src="js/jquery.tabslet.min.js"></script> <!-- JQUERY Tab plugin-->     
+<script type="text/javascript" src="js/progressbar.min.js"></script> <!-- JQUERY Progressbar Plugin-->
+<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script> <!-- JQUERY Text Rotator-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap file-->
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBPNkCVoBW_Jzl6x-hgGU6e7QW1QMwKles"></script>
+<script type="text/javascript" src='js/isotope.pkgd.min.js'></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
